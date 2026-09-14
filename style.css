@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    font-family: "DotGothic16", sans-serif;
+    background-color: #f7f7f7;
+}
+
+#title {
+    font-family: "Valley Sans", sans-serif;
+    background: linear-gradient(to bottom, #ffdae3, #ffc0cb);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background-origin: border-box;
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    margin-top: 50px;
+    font-family: "Valley Sans", sans-serif;
+    color: lightgrey;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    margin-top: 50px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.buttons {
+    background: linear-gradient(to bottom, #ffdae3, #ffc0cb);
+    color: white;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background-origin: border-box; /* Makes the weird lines go away on gradient blocks*/
+    font-family: "DotGothic16", sans-serif;
+}
+
+.buttons.active {
+    background: white;
+    color: #ffc0cb;
+    border-color: #ffc0cb;
+}
+
+.buttons:hover {
+    background: linear-gradient(to bottom, #ffc0cb, #ffdae3);
+    border-color: white;
+}
+
+.buttons.active:hover {
+    background: white;
+    color: #ffc0cb;
+    border-color: #ffc0cb;
+}
+
+.buttons.active {
+    background: white;
+    color: #ffc0cb;
+    border-color: #ffc0cb;
+}
+
+.buttons.active:hover {
+    background: white;
+    color: #ffc0cb;
+    border-color: #ffc0cb;
+}
+
+.next {
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #ffdae3, #ffc0cb);
+    color: white;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background-origin: border-box;
+    font-family: "DotGothic16", sans-serif;
+}
+
+.next:not(:disabled):hover {
+    background: linear-gradient(to bottom, #ffc0cb, #ffdae3);
+    border-color: white;
+}
+
+.next:disabled {
+    background: linear-gradient(to bottom, #ffdae3, #ffc0cb);
+    color: white;
+    cursor: not-allowed;
+    background-origin: border-box;
+}
+
+#leftcolumn {
+    background-color: white;
+    height: 900px;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#rightcolumn {
+    background-color: white;
+    height: 900px;
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
