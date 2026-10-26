@@ -16,55 +16,12 @@
 <body>
     <h1 id="title">Skincare Quiz</h1>
 
-    <div id="q1-container" class="quiz-container">
-        <div class="question">
-            <p>What is your skin type?</p>
-        </div>
-
-        <div class="answer">
-            <button class="buttons">Normal</button>
-            <button class="buttons">Oily</button>
-            <button class="buttons">Dry</button>
-            <button class="buttons">Combination</button>
-            <button class="buttons">Sensitive</button>
-            <button class="buttons">I'm not sure</button>
-        </div>
-
-        <div>
-            <button onclick="showQuestion(2)" class="next" disabled>Next</button>
-        </div>
+    <div id="quiz-container" class="quiz-container">
+        <div class="question"><p id="question-text"></p></div>
+        <div class="answer" id="answer-list"></div>
+        <div><button id="next-btn" class="next" disabled>Next</button></div>
     </div>
-
-    <div id="q2-container" class="quiz-container" style="display: none;">
-        <div class="question">
-            <p>What is your skin concern?</p>
-        </div>
-
-        <div class="answer">
-            <button class="buttons">Acne</button>
-            <button class="buttons">Dark spots</button>
-            <button class="buttons">Dull complexion</button>
-            <button class="buttons">Dark eye circles</button>
-            <button class="buttons">Pores</button>
-            <button class="buttons">Redness</button>
-            <button class="buttons">Textured skin</button>
-            <button class="buttons">Fine lines/wrinkles</button>
-            <button class="buttons">Anti-aging</button>
-            <button class="buttons">Clogged pores</button>
-        </div>
-
-        <div>
-            <button onclick="showQuestion(3)" class="next" disabled>Next</button>
-        </div>
-    </div>
-
-    <div id="q3-container" class="quiz-container" style="display: none;">
-        <div class="question">
-            <p>Thank you for completing the quiz!</p>
-        </div>
-    </div>
-    </div>
-
+    
     <div id="leftcolumn"></div>
     <div id="rightcolumn"></div>
     <script src="script.js"></script>
